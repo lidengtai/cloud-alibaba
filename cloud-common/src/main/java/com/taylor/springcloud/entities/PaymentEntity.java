@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author taylor
  * @Description: TODO
- * @date 2021/2/23 0:12
+ * @date 2021/2/25 23:02
  */
 @Data
 @AllArgsConstructor
@@ -16,3 +16,4 @@ public class PaymentEntity {
     private Long id;
     private String serial;
 }
+

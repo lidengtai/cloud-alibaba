@@ -11,6 +11,7 @@
     <modules>
         <module>cloud-provider-payment8001</module>
         <module>cloud-consumer-order80</module>
+        <module>cloud-common</module>
     </modules>
 
     <!-- 统一jar包版本管理 -->

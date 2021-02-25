@@ -1,7 +1,8 @@
 package com.taylor.spirngcloud.controller;
 
-import com.taylor.spirngcloud.entities.PaymentEntity;
-import com.taylor.spirngcloud.entities.ResponseCommon;
+
+import com.taylor.springcloud.entities.PaymentEntity;
+import com.taylor.springcloud.entities.ResponseCommon;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
