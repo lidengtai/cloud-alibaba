@@ -26,7 +26,7 @@ public class PaymetController {
     @PostMapping(value = "/payment/save")
     public ResponseCommon save(PaymentEntity paymentEntity){
         int result = paymentService.save(paymentEntity);
-        log.info("插入返回结果 ："+result);
+        log.info("插入返回结果 ："+result+" ^_^ ");
         if (result>0){
             return new ResponseCommon(200,"save success",result);
         }else {
@@ -34,12 +34,13 @@ public class PaymetController {
         }
     }
     @GetMapping (value = "/payment/get/{id}")
-    public ResponseCommon getPaymentByID(@PathVariable("id") Long id){
+    public ResponseCommon<PaymentEntity> getPaymentByID(@PathVariable("id") Long id){
         PaymentEntity result = paymentService.getPaymentByID(id);
+        log.info("查询返回结果 ："+result.toString()+" ^_^ ");
         if (result!=null){
             return new ResponseCommon(200,"query success",result);
         }else {
-            return new ResponseCommon(200,"no data");
+            return new ResponseCommon(200,"query no data！");
         }
     }
 }
