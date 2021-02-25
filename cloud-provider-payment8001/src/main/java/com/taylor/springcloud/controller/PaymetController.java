@@ -4,10 +4,7 @@ import com.taylor.springcloud.entities.PaymentEntity;
 import com.taylor.springcloud.entities.ResponseCommon;
 import com.taylor.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -24,13 +21,13 @@ public class PaymetController {
     private PaymentService paymentService;
 
     @PostMapping(value = "/payment/save")
-    public ResponseCommon save(PaymentEntity paymentEntity){
+    public ResponseCommon save(@RequestBody PaymentEntity paymentEntity){
         int result = paymentService.save(paymentEntity);
         log.info("插入返回结果 ："+result+" ^_^ ");
         if (result>0){
-            return new ResponseCommon(200,"save success",result);
+            return new ResponseCommon(200,"success",result);
         }else {
-            return new ResponseCommon(500,"save fail");
+            return new ResponseCommon(500,"fail");
         }
     }
     @GetMapping (value = "/payment/get/{id}")
@@ -38,9 +35,9 @@ public class PaymetController {
         PaymentEntity result = paymentService.getPaymentByID(id);
         log.info("查询返回结果 ："+result.toString()+" ^_^ ");
         if (result!=null){
-            return new ResponseCommon(200,"query success",result);
+            return new ResponseCommon(200,"success",result);
         }else {
-            return new ResponseCommon(200,"query no data！");
+            return new ResponseCommon(200,"no data！");
         }
     }
 }
