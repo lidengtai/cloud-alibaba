@@ -11,7 +11,15 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+#      defaultZone: http://localhost:7001/eureka 单机版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #集群版
 
 mybatis:
   mapperLocations: classpath:mapping/*.xml
   type-aliases-package: com.taylor.springcloud.entities
+
