@@ -6,6 +6,8 @@ eureka服务中心配置及集群环境配置
 zookeeper服务中心配置及集群环境配置
 服务提供端和服务调用端注册到zookeeper
 
-win10 安装consul
+win10 安装consul 
 cmd 命令 consul.exe agent -dev 
 http://localhost:8500/访问
+
+配置Ribbon负载均衡 手写负载均衡算法

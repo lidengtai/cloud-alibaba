@@ -43,4 +43,9 @@ public class PaymetController {
             return new ResponseCommon(200,"no data！");
         }
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return serverPort;
+    }
 }
