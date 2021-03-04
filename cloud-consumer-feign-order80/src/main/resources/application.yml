@@ -1,0 +1,20 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-order-service
+eureka:
+  client:
+    register-with-eureka: true #*表示该实例是否应该向eureka注册其信息 服务器供其他人发现
+    fetch-registry: true # 表示该客户端是否应该从eureka获取注册表信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #集群版
+
+ribbon:
+  # 指的是建立连接所用的时间,适用于网络状态正常的情况下,两端连接所用的时间
+  ReadTimeout: 4000
+  # 指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 3000
+logging:
+  level:
+    com.taylor.springcloud.service.PaymentFeignService: debug

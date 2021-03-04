@@ -11,3 +11,5 @@ cmd 命令 consul.exe agent -dev
 http://localhost:8500/访问
 
 配置Ribbon负载均衡 手写负载均衡算法
+
+配置openfeign 组件的服务调用 超时配置 日志配置
