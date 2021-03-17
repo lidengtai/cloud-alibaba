@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/lidengtai/springcloud-config.git
+          uri: https://gitee.com/lidengtai/springcloud-config-master.git
           search-paths:
             - spring-config
 #          username: lidengtai@163.com

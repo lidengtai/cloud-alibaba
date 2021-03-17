@@ -2,19 +2,16 @@ package com.taylor.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * @author taylor
  * @Description: TODO
- * @date 2021/3/8 23:18
+ * @date 2021/3/17 23:35
  */
 @SpringBootApplication
-@EnableConfigServer
-public class ConfigCenterMain3344 {
+public class StreamMQMain8803 {
     public static void main(String[] args) {
-        SpringApplication.run(ConfigCenterMain3344.class, args);
-        System.out.println("配置中心服务启动.......");
+        SpringApplication.run(StreamMQMain8803.class, args);
+        System.out.println("rabbitmq 消费者8803服务启动......");
     }
-
 }

@@ -13,3 +13,6 @@ http://localhost:8500/访问
 配置Ribbon负载均衡 手写负载均衡算法
 
 配置openfeign 组件的服务调用 超时配置 日志配置
+
+配置中心
+http://config-3344.com:3344/master/config-dev.yml
