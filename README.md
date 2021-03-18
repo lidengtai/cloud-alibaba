@@ -16,3 +16,7 @@ http://localhost:8500/访问
 
 配置中心
 http://config-3344.com:3344/master/config-dev.yml
+
+链路追踪
+sleuth+zipkin
+http://localhost:9411/zipkin/

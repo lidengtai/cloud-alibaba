@@ -16,7 +16,7 @@ public class MySelfRule {
 
     @Bean
     public IRule myRule(){
-//        return new RoundRobinRule();
-        return new RandomRule();
+        return new RoundRobinRule();
+//        return new RandomRule();
     }
 }
