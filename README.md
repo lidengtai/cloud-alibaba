@@ -35,4 +35,17 @@ https://spring-cloud-alibaba-group.github.io/github-pages/hoxton/zh-cn/index.htm
 
 nacos:
 Nacos Server 启动后，进入 http://ip:8848 查看控制台(默认账号名/密码为 nacos/nacos):
-http://192.168.10.109:8848/nacos/index.html#/login
+http://192.168.10.109:8848/nacos/index.html#/login 单机版
+
+http://192.168.11.120:1111/nacos 集群版+Nginx负载均衡
+
+mysql：192.168.11.110
+
+server 192.168.11.110:8848;
+server 192.168.11.111:8848;
+server 192.168.11.112:8848;
+
+/usr/local/webserver/nginx/sbin/nginx 启动服务
+/usr/local/webserver/nginx/sbin/nginx -t 查看nginx状态
+
+
