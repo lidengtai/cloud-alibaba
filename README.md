@@ -41,6 +41,8 @@ http://192.168.11.120:1111/nacos 集群版+Nginx负载均衡
 
 mysql：192.168.11.110
 
+sh /usr/nacos/bin/startup.sh 启动nocas集群
+
 server 192.168.11.110:8848;
 server 192.168.11.111:8848;
 server 192.168.11.112:8848;
@@ -49,3 +51,5 @@ server 192.168.11.112:8848;
 /usr/local/webserver/nginx/sbin/nginx -t 查看nginx状态
 
 
+sentinel 环境搭建
+http://localhost:8080/#/dashboard/home
