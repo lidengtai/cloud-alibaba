@@ -7,8 +7,10 @@ spring:
   cloud:
     nacos:
       discovery:
-#        server-addr: localhost:8848 #单机版
-        server-addr: 192.168.11.120:1111 #集群版  换成nginx的1111端口
+        server-addr: localhost:8848 #单机版
+#        server-addr: 192.168.11.120:1111 #集群版  换成nginx的1111端口
+
+
 management:
   endpoints:
     web:
