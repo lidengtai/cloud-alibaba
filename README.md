@@ -53,3 +53,5 @@ server 192.168.11.112:8848;
 
 sentinel 环境搭建
 http://localhost:8080/#/dashboard/home
+
+seata 分布式事务解决方案
